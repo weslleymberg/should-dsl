@@ -10,6 +10,9 @@ def all_examples():
         filter(lambda f: f.endswith('.txt'), os.listdir(doctests_path))))
     return documentation + doctests
 
-if __name__ == '__main__':
+def test_suite():
     run(all_examples())
+
+if __name__ == '__main__':
+   test_suite()
 
